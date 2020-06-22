@@ -1,15 +1,27 @@
 @import "libs"
 @import "base"
 
-img
-	max-width: 100%
+
+.wrapper
+	position: relative
+	background-color: #ffffff
+	box-shadow: 0 0 15px 0 rgba(#575757, .22)
+	max-width: 1325px
 	width: 100%
+	margin: 0 auto
+
+	+r(1325)
+		max-width: 1200px
+
 
 .container
 	width: 100%
-	max-width: 1200px
-	padding: 0 15px
+	max-width: 1185px
 	margin: 0 auto
+
+	+r(1325)
+		padding: 0 15px
+		max-width: 1170px
 
 	+r(1200)
 		max-width: 992px
@@ -17,40 +29,294 @@ img
 	+r(992)
 		max-width: 768px
 
+	+r(767)
+		max-width: 576px
+
+	+r(576)
+		max-width: 100%
 
 .header
-	position: fixed
-	top: 0
-	right: 0
-	left: 0
-	@extend .class
+	background-image: url(../img/header--bg.png)
+	background-position: top right
+	background-repeat: no-repeat
+	border-bottom: 1px solid $border
+
+	+r(992)
+		background-image: none
+
+	&__top
+		display: flex
+		justify-content: flex-end
+		align-items: center
+		padding: 15px 65px 20px
+
+		+r(992)
+			padding: 10px 15px
+			background-color: $accent
+
+		&_link
+			margin-right: 55px
+
+			+r(767)
+				margin-right: 30px
+
+			+r(480)
+				margin-right: 20px
 
 	&__container
+		position: relative
+		transition: all .6s
 		+between
+
+		+r(992)
+			padding: 5px 15px
+
+		&--menu
+			box-shadow: 0 5px 5px 0 rgba($text, .3)
 
 	&__logo
+		
+		+r(1200)
+			max-width: 45%
+			min-width: 250px
+
 		img
-			width: 130px
-			height: auto
+			+r(1200)
+				width: 100%
+
+	&__nav
+
+		+r(1200)
+			width: 50%
+
+		+r(767)
+			position: absolute
+			width: 100%
+			top: 100%
+			right: 0
+			left: 0
+			background-color: #ffffff
+			z-index: 1000
+			padding: 40px
+			box-shadow: 0 5px 5px 0 rgba($text, .3)
+			transition: all .6s
+			display: none
+
+			ul
+				flex-direction: column
+
+			li
+				margin-bottom: 20px
+				font-size: 22px
+
+				&:last-child
+					margin-bottom: 0
+
+		ul
+			+between
+
+		li
+			margin-right: 95px
+
+			&:last-child
+				margin-right: 0
+
+			+r(1325)
+				margin-right: 50px
+
+			+r(1200)
+				margin-right: 0
+		
+		a
+			color: $text
+
+			&:hover
+				color: $accent
+
+	&__search
+		display: flex
+		align-items: center
+		padding: 33px 0
+
+		+r(992)
+			padding: 15px
+		
+		+r(480)
+			flex-wrap: wrap
+
+		input
+			height: 40px
+			border-top-left-radius: 5px
+			border-bottom-left-radius: 5px
+
+			+r(480)
+				width: 100%
+				border-radius: 4px
+				margin-bottom: 5px
+
+		button
+			height: 40px
+			flex-shrink: 0
+			padding: 0 45px
+			border: 1px solid transparent
+			cursor: pointer
+			background-color: $accent
+			color: #ffffff
+			border-top-right-radius: 5px
+			border-bottom-right-radius: 5px
+
+			+r(480)
+				width: 100%
+				border-radius: 4px
+
+			&:hover
+				border: 1px solid #ffffff
+
+			+r(992)
+				padding: 0 15px
+
+.nav--active
+	display: block
 
 
-.nav
-	ul
-		+between
+.section
+	padding-top: 30px
+	padding-bottom: 60px
 
-	li
-		margin-right: 25px
+	+r(1200)
+		padding: 30px 0
+
+	&__header
+		display: flex
+		justify-content: space-between
+		flex-wrap: wrap
+		align-items: center
+		margin-bottom: 35px
+
+		+r(1200)
+			margin-bottom: 20px
+
+		+r(480)
+			justify-content: center
+
+		h2
+			margin-bottom: 10px
+
+		&_more
+			display: flex
+			align-items: center
+
+			+r(480)
+				width: 100%
+				justify-content: center
+
+		span
+			position: relative
+			display: block
+			margin-right: 12px
+
+			&::before,
+			&::after
+				content: ''
+				position: absolute
+				top: 50%
+				left: 50%
+				transform: translate(-50%, -50%)
+				display: block
+				background-color: $accent
+
+			&::before
+				width: 2px
+				height: 11px
+
+			&::after
+				height: 2px
+				width: 11px
+
+	&__slider
+
+		img
+			width: 100%
+			margin-bottom: 15px
+
+		p
+			color: $text
+			font-size: 12px
+			font-weight: 600
+
+			&:last-child
+				color: $accent
+		
+		&_item
+			padding: 25px 30px 20px
+			border: 1px solid transparent
+			transition: all .6s
+
+			+r(1325)
+				padding: 20px
+
+			+r(1200)
+				padding: 15px
+
+			&:hover
+				border: 1px solid $border
+
+	&__button
+		background-image: none
+		opacity: 1 !important
+		z-index: 100
+
+		&::before
+			content: ''
+			position: absolute
+			top: 50%
+			left: 50%
+			display: block
+			width: 15px
+			height: 15px
+			border-top: 1px solid $border
+			border-left: 1px solid $border
+			transition: all .6s
+
+		&:hover
+			&::before
+				border-color: $text
+
+		&--prev
+			left: 0
+
+			&::before
+				transform: translate(-50%, -50%) rotate(-45deg)
+
+
+		&--next
+			right: 0
+
+			&::before
+				transform: translate(-50%, -50%) rotate(135deg)
+
+	&--bg
+		background-color: #f8f9fe
+
+
+.about
+	border-top: 1px solid $border
+
+	h2
+		margin-bottom: 20px
+
+	p
+		margin-bottom: 15px
 
 		&:last-child
-			margin-right: 0
-
-
-.main
-	+cover
-
+			margin-bottom: 0
 
 .footer
-	&__container
+	padding: 30px 0
+	background-color: $accent
+	text-align: center
+	color: #ffffff
+
 
 
 @import "page"

@@ -3,15 +3,26 @@
 	display: flex
 	justify-content: center
 	align-items: center
-	height: 45px
-	font-size: 18px
+	height: 33px
 	color: $accent
-	font-weight: 700
-	border-radius: 20px
+	border-radius: 5px
 	max-width: fit-content
+	border: 1px solid transparent
 
-	&:hover,
-	&:focus
+	&:hover
 		border: 1px solid $accent
 		background: $accent
 		color: #fff
+
+	&--yellow
+		color: $text
+		background-color: $yellow
+		padding: 0 30px
+
+		+r(480)
+			padding: 0 15px
+
+		&:hover
+			color: $text
+			background-color: $yellow
+			border: 1px solid $accent
