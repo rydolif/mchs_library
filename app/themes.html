@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="utf-8">
+	<title>Название тематики</title>
+	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width">
+	<link rel="icon" href="img/favicon.ico">
+	<meta property="og:image" content="img/screenshot.png">
+	<link rel="stylesheet" href="css/main.min.css?v=1">
+</head>
+
+<body>
+
+	<div class="wrapper">
+
+		<header class="header">
+			<div class="header__top container">
+				<a href="#" class="header__top_link" target="_blank">
+					<img src="img/header--vk.png" alt="">
+				</a>
+				<a href="#" class="header__top_link" target="_blank">
+					<img src="img/header--print.png" alt="">
+				</a>
+				<a href="#" class="header__top_link" target="_blank">
+					<img src="img/header--viz.png" alt="">
+				</a>
+				<a href="#" class="btn btn--yellow">Личный кабинет</a>
+			</div>
+			<div class="header__container container">
+				<a href="/" class="header__logo header__logo">
+					<img src="img/header--logo.png" alt="logo">
+				</a>
+	
+				<button class="hamburger" type="button">
+					<span class="hamburger__box">
+						<span class="hamburger__item"></span>
+					</span>
+				</button>
+	
+				<nav class="header__nav nav">
+					<ul>
+						<li><a href="index.html">Головна</a></li>
+						<li><a href="catalog.html">Наші послуги</a></li>
+						<li><a href="about.html">Виконанні роботи</a></li>
+						<li><a href="contacts.html">Контакти</a></li>
+					</ul>
+				</nav>
+	
+			</div>
+			<form class="header__search container">
+				<input type="search" placeholder="Введите название документа или книги">
+				<button>Искать материалы</button>
+			</form>
+		</header>
+
+		<section class="search">
+			<div class="container">
+
+				<ul class="grums">
+					<li><a href="#">Главная</a></li>
+					<li><span>/</span></li>
+					<li><span>Тематика</span></li>
+				</ul>
+
+				<div class="search__header">
+					<h2>Название тематики</h2>
+					<a href="#">Вернуться в каталог</a>
+				</div>
+
+			</div>
+		</section>
+
+		<section class="result">
+			<div class="container">
+				
+				<form class="result__filter">
+					<p class="result__filter_wrap">
+						<label for="numer"><b>Показывать по</b></label>
+						<select name="numer" id="numer">
+							<option value="1">1</option>
+							<option value="4">4</option>
+							<option value="8">8</option>
+							<option value="10">10</option>
+						</select>
+					</p>
+
+					<p>Показано 1-10 из 1000 </p>
+
+					<p class="result__filter_discipline">
+						<b>Выбрать дисциплину</b>
+						<select name="discipline" id="discipline">
+							<option value="Название дисциплины" selected>Название дисциплины</option>
+							<option value="Название дисциплины2">Название дисциплины2</option>
+						</select>
+					</p>
+
+					<p class="result__filter_wrap">
+						<span><b>Сортировать по</b></span>
+						<span class="result__filter_label">
+							<input type="radio" name="radio" id="date">
+							<label for="date">Дате</label>
+						</span>
+						<span class="result__filter_label">
+							<input type="radio" name="radio" id="remember">
+							<label for="remember">Алфавиту</label>
+						</span>
+
+					</p>
+				</form>
+
+			</div>
+		</section>
+
+		<section class="result__wrap">
+			<div class="container">
+				
+				<div class="result__list">
+
+					<div class="result__item">
+						<div class="result__item_img">
+							<img src="img/section--img1.png" alt="">
+							<a href="#" class="result__item_icon">
+								<img src="img/result--icon.png" alt="">
+							</a>
+						</div>
+						<div class="result__item_content">
+							<h3>Формирование доступной среды</h3>
+							<p>Автор: <a href="#">Марьина Елена Сергеевна</a></p>
+							<p>Год: 2019 </p>
+							<p>Тематика: <a href="#">Этнография</a> / <a href="#">Биология</a> / <a href="#">Эволюция</a></p>
+							<p>Дисциплина: Основы Безопасности Жизнедеятельности</p>
+							<p>ББК: 2300000000 </p>
+							<p>УДК: Lorem ipsum dolor sit amet, consectetur</p>
+							<p>Уровень образования: Литература 3-4 курса</p>
+							<p>Вид издания: Монография</p>
+							<p>
+								Библиографическая запись: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod 
+								tempor
+							</p>
+							<p>
+								Аннотация: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor 
+								incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud 
+								exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure 
+								dolor in reprehenderit 
+							</p>
+						</div>
+
+					</div>
+
+					<div class="result__item">
+						<div class="result__item_img">
+							<img src="img/section--img1.png" alt="">
+							<a href="#" class="result__item_icon">
+								<img src="img/result--icon.png" alt="">
+							</a>
+						</div>
+						<div class="result__item_content">
+							<h3>Формирование доступной среды</h3>
+							<p>Автор: <a href="#">Марьина Елена Сергеевна</a></p>
+							<p>Год: 2019 </p>
+							<p>Тематика: <a href="#">Этнография</a> / <a href="#">Биология</a> / <a href="#">Эволюция</a></p>
+							<p>Дисциплина: Основы Безопасности Жизнедеятельности</p>
+							<p>ББК: 2300000000 </p>
+							<p>УДК: Lorem ipsum dolor sit amet, consectetur</p>
+							<p>Уровень образования: Литература 3-4 курса</p>
+							<p>Вид издания: Монография</p>
+							<p>
+								Библиографическая запись: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod 
+								tempor
+							</p>
+							<p>
+								Аннотация: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor 
+								incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud 
+								exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure 
+								dolor in reprehenderit 
+							</p>
+						</div>
+
+					</div>
+
+				</div>
+
+				<div class="admin__pagination">
+					<a href="#">1</a>
+					<span>2</span>
+					<a href="#">3</a>
+					<a href="#">...</a>
+					<a href="#">100</a>
+				</div>
+			</div>
+		</section>
+
+	</div>
+
+	<footer class="footer">
+		<div class="container">
+			<p>«© 2020 Цифровая среда ФГБОУ ВО Ивановской пожарно-спасательной академии ГПС МЧС России»</p>
+		</div>
+	</footer>
+
+	<div class="modal" id="order">
+		<form action="sendmail.php" class="form" method="post">
+
+			<button class="close order_close" type="button">
+				<span></span>
+				<span></span>
+			</button>
+
+			<h3>Оставьте заявку, <br>мы свяжемся с Вами</h3>
+			<input type="hidden" name="subject" value="Узнать подробнее!">
+
+			<div class="">
+				<input type="text" name="name" placeholder="Имя" required>
+			</div>
+			<div class="">
+				<input type="tel" name="phone" placeholder="Телефон" required>
+			</div>
+			<div class="">
+				<button type="submit" class="btn" name="submit">Отправить</button>
+			</div>
+		</form>
+	</div>
+
+	<div class="modal" id="thanks">
+		<button class="close thanks_close" type="button">
+			<span></span>
+			<span></span>
+		</button>
+		<h3>Спасибо за доверие!</h3>
+		<p>Мы обязательно с вами свяжемся!</p>
+	</div>
+
+	<script src="js/scripts.min.js"></script>
+
+</body>
+</html>
