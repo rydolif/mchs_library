@@ -784,6 +784,121 @@
 				margin-right: 35px
 
 
+.result
+	padding-top: 20px
+
+	&__wrap
+		padding-bottom: 35px
+
+	&__filter
+		display: flex
+		flex-wrap: wrap
+		justify-content: space-between
+		align-items: center
+		font-size: 12px
+
+		+r(767)
+			justify-content: space-around
+
+		p
+			+r(767)
+				margin-bottom: 15px
+				margin: 0 5px 15px 5px
+
+		select
+			width: 90px
+		
+		label
+			margin-bottom: 0
+
+		&_wrap
+			display: flex
+			align-items: center
+
+			b
+				margin-right: 30px
+
+				+r(992)
+					margin-right: 10px
+
+		&_label
+			margin-right: 10px
+
+			&:last-child
+				margin-right: 0
+
+			label
+				display: flex
+				justify-content: center
+				align-items: center
+				height: 35px
+				border-radius: 5px
+				padding: 0 20px
+				border: 1px solid $border
+				transition: all .6s
+
+			input[type="radio"]
+				display: none
+
+			input[type="radio"]:checked + label
+				border-color: $accent
+
+	&__list
+		margin-bottom: 35px
+
+	&__item
+		display: flex
+		justify-content: space-between
+		align-items: flex-start
+		padding: 35px 0
+		border-bottom: 1px solid $border
+
+		+r(390)
+			flex-wrap: wrap
+			padding: 20px 0
+
+		&_img
+			width: 200px
+			padding: 30px 30px 12px 30px
+			border: 1px solid $border
+			flex-shrink: 0
+			margin-right: 45px
+
+			+r(992)
+				padding: 15px
+				margin-right: 15px
+
+			+r(576)
+				width: 150px
+			
+			+r(390)
+				margin: 0 auto 15px
+
+			img
+				width: 100%
+		
+		&_icon
+			display: block
+			margin: 7px auto 0
+			text-align: center
+
+			img
+				width: auto
+
+		&_content
+			font-size: 12px
+
+			+r(390)
+				width: 100%
+
+			h3
+				margin-bottom: 15px
+			
+			p
+				margin-bottom: 8px
+
+				&:last-child
+					margin-bottom: 0
 
 
 
