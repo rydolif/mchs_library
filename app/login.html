@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="utf-8">
+	<title>Войти в систему</title>
+	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width">
+	<link rel="icon" href="img/favicon.ico">
+	<meta property="og:image" content="img/screenshot.png">
+	<link rel="stylesheet" href="css/main.min.css?v=1">
+</head>
+
+<body>
+
+	<div class="wrapper">
+
+		<header class="header">
+			<div class="header__top container">
+				<a href="#" class="header__top_link" target="_blank">
+					<img src="img/header--vk.png" alt="">
+				</a>
+				<a href="#" class="header__top_link" target="_blank">
+					<img src="img/header--print.png" alt="">
+				</a>
+				<a href="#" class="header__top_link" target="_blank">
+					<img src="img/header--viz.png" alt="">
+				</a>
+				<a href="#" class="btn btn--yellow">Личный кабинет</a>
+			</div>
+			<div class="header__container container">
+				<a href="/" class="header__logo header__logo">
+					<img src="img/header--logo.png" alt="logo">
+				</a>
+	
+				<button class="hamburger" type="button">
+					<span class="hamburger__box">
+						<span class="hamburger__item"></span>
+					</span>
+				</button>
+	
+				<nav class="header__nav nav">
+					<ul>
+						<li><a href="index.html">Головна</a></li>
+						<li><a href="catalog.html">Наші послуги</a></li>
+						<li><a href="about.html">Виконанні роботи</a></li>
+						<li><a href="contacts.html">Контакти</a></li>
+					</ul>
+				</nav>
+	
+			</div>
+			<form class="header__search container">
+				<input type="search" placeholder="Введите название документа или книги">
+				<button>Искать материалы</button>
+			</form>
+		</header>
+
+		<section class="section login">
+			<div class="container">
+
+				<h2>Войти в систему</h2>
+				
+				<form class="login__form">
+					<div class="login__form_line">
+						<label for="login">Логин</label>
+						<input type="text" name="login" id="login" placeholder="Введите">
+					</div>
+					<div class="login__form_line">
+						<label for="password">Пароль</label>
+						<input type="password" name="password" id="password" placeholder="Введите">
+					</div>
+					<div class="login__form_btn">
+						<p><a href="#">Забыли пароль?</a></p>
+						<button class="btn">Войти в систему</button>
+					</div>
+				</form>
+			</div>
+		</section>
+	</div>
+
+	<footer class="footer">
+		<div class="container">
+			<p>«© 2020 Цифровая среда ФГБОУ ВО Ивановской пожарно-спасательной академии ГПС МЧС России»</p>
+		</div>
+	</footer>
+
+	<div class="modal" id="order">
+		<form action="sendmail.php" class="form" method="post">
+
+			<button class="close order_close" type="button">
+				<span></span>
+				<span></span>
+			</button>
+
+			<h3>Оставьте заявку, <br>мы свяжемся с Вами</h3>
+			<input type="hidden" name="subject" value="Узнать подробнее!">
+
+			<div class="">
+				<input type="text" name="name" placeholder="Имя" required>
+			</div>
+			<div class="">
+				<input type="tel" name="phone" placeholder="Телефон" required>
+			</div>
+			<div class="">
+				<button type="submit" class="btn" name="submit">Отправить</button>
+			</div>
+		</form>
+	</div>
+
+	<div class="modal" id="thanks">
+		<button class="close thanks_close" type="button">
+			<span></span>
+			<span></span>
+		</button>
+		<h3>Спасибо за доверие!</h3>
+		<p>Мы обязательно с вами свяжемся!</p>
+	</div>
+
+	<script src="js/scripts.min.js"></script>
+
+</body>
+</html>

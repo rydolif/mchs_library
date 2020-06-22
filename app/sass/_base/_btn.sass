@@ -3,24 +3,27 @@
 	display: flex
 	justify-content: center
 	align-items: center
-	height: 33px
-	color: $accent
+	height: 35px
+	color: #ffffff
+	background-color: $accent
 	border-radius: 5px
 	max-width: fit-content
 	border: 1px solid transparent
+	border: 1px solid $accent
+	padding: 0 30px
+
+	+r(480)
+		padding: 0 15px
 
 	&:hover
-		border: 1px solid $accent
+		border: 1px solid transparent
 		background: $accent
 		color: #fff
+		box-shadow: 0 0 5px 0 rgba($accent, 1)
 
 	&--yellow
 		color: $text
 		background-color: $yellow
-		padding: 0 30px
-
-		+r(480)
-			padding: 0 15px
 
 		&:hover
 			color: $text
