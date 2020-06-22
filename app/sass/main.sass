@@ -412,6 +412,7 @@
 		&:hover
 			color: $accent
 
+
 .catalog
 	padding: 30px 0
 
@@ -695,5 +696,95 @@
 		span
 			background-color: $accent
 			color: #ffffff
+
+
+.search
+	padding: 20px 0
+	border-bottom: 1px solid $border
+
+	h2
+		margin-bottom: 0
+
+	&__form
+		display: flex
+		flex-wrap: wrap
+		justify-content: space-between
+		align-items: center
+		padding-top: 25px
+		padding-bottom: 35px
+
+		label
+			font-size: 12px
+
+			+r(480)
+				margin-bottom: 2px
+
+		input
+			border-radius: 5px
+
+		&_title
+			width: 280px
+
+		&_name
+			width: 390px
+
+		&_year
+			width: 150px
+
+		&_themes
+			width: 315px
+		
+		&_themes2
+			width: 310px
+
+		&_udk, &_bbk
+			width: 250px
+		
+		&_level
+			width: 315px
+
+		&_view
+			width: 315px
+		
+		&_biography
+			width: 850px
+		
+		&_line
+			margin-bottom: 20px
+
+			+r(1325)
+				width: 49%
+
+			+r(480)
+				margin-bottom: 10px
+				width: 100%
+
+		&_annotation
+			width: 100%
+		
+		&_btn
+			display: flex
+			align-items: center
+			flex-wrap: wrap
+			justify-content: center
+			width: 100%
+			margin-top: 40px
+
+			+r(767)
+				margin-top: 25px
+
+			a
+				font-size: 16px
+				color: $text
+
+				&:hover
+					color: $accent
+
+			button
+				margin-right: 35px
+
+
+
+
 
 @import "page"

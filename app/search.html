@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="utf-8">
+	<title>Расширенный поиск</title>
+	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width">
+	<link rel="icon" href="img/favicon.ico">
+	<meta property="og:image" content="img/screenshot.png">
+	<link rel="stylesheet" href="css/main.min.css?v=1">
+</head>
+
+<body>
+
+	<div class="wrapper">
+
+		<header class="header">
+			<div class="header__top container">
+				<a href="#" class="header__top_link" target="_blank">
+					<img src="img/header--vk.png" alt="">
+				</a>
+				<a href="#" class="header__top_link" target="_blank">
+					<img src="img/header--print.png" alt="">
+				</a>
+				<a href="#" class="header__top_link" target="_blank">
+					<img src="img/header--viz.png" alt="">
+				</a>
+				<a href="#" class="btn btn--yellow">Личный кабинет</a>
+			</div>
+			<div class="header__container container">
+				<a href="/" class="header__logo header__logo">
+					<img src="img/header--logo.png" alt="logo">
+				</a>
+	
+				<button class="hamburger" type="button">
+					<span class="hamburger__box">
+						<span class="hamburger__item"></span>
+					</span>
+				</button>
+	
+				<nav class="header__nav nav">
+					<ul>
+						<li><a href="index.html">Головна</a></li>
+						<li><a href="catalog.html">Наші послуги</a></li>
+						<li><a href="about.html">Виконанні роботи</a></li>
+						<li><a href="contacts.html">Контакти</a></li>
+					</ul>
+				</nav>
+	
+			</div>
+			<form class="header__search container">
+				<input type="search" placeholder="Введите название документа или книги">
+				<button>Искать материалы</button>
+			</form>
+		</header>
+
+		<section class="search">
+			<div class="container">
+
+				<ul class="grums">
+					<li><a href="#">Главная</a></li>
+					<li><span>/</span></li>
+					<li><span>Расширенный поиск</span></li>
+				</ul>
+
+				<h2>Расширенный поиск</h2>
+			</div>
+		</section>
+
+		
+		<div class="container">
+			<form class="search__form">
+
+				<div class="search__form_title search__form_line">
+					<label for="title">Заголовок</label>
+					<input type="text" name="title" id="title" placeholder="Введите">
+				</div>
+
+				<div class="search__form_name search__form_line">
+					<label for="name">ФИО Автора </label>
+					<input type="text" name="name" id="name" placeholder="Введите">
+				</div>
+
+				<div class="search__form_year search__form_line">
+					<label for="year">Год </label>
+					<select name="year" id="year">
+						<option value="Выберите" selected>Выберите</option>
+						<option value="2011">2011</option>
+						<option value="2012">2012</option>
+						<option value="2013">2013</option>
+						<option value="2014">2014</option>
+					</select>
+				</div>
+
+				<div class="search__form_themes search__form_line">
+					<label for="themes">Тематика</label>
+					<select name="themes" id="themes">
+						<option value="Выберите" selected>Выберите</option>
+						<option value="Религия">Религия</option>
+						<option value="Искусство">Искусство</option>
+					</select>
+				</div>
+
+				<div class="search__form_themes2 search__form_line">
+					<label for="themes2">Дисциплина</label>
+					<select name="themes2" id="themes2">
+						<option value="Выберите" selected>Выберите</option>
+						<option value="Религия">Религия</option>
+						<option value="Искусство">Искусство</option>
+					</select>
+				</div>
+
+				<div class="search__form_bbk search__form_line">
+					<label for="bbk">ББК</label>
+					<input type="text" name="bbk" id="bbk" placeholder="Введите">
+				</div>
+
+				<div class="search__form_udk search__form_line">
+					<label for="udk">УДК</label>
+					<input type="text" name="udk" id="udk" placeholder="Введите">
+				</div>
+
+				<div class="search__form_level search__form_line">
+					<label for="level">Уровень образования</label>
+					<select name="level" id="level">
+						<option value="Выберите" selected>Выберите</option>
+						<option value="Религия">Религия</option>
+						<option value="Искусство">Искусство</option>
+					</select>
+				</div>
+
+				<div class="search__form_view search__form_line">
+					<label for="view">Вид издания</label>
+					<select name="view" id="view">
+						<option value="Выберите" selected>Выберите</option>
+						<option value="Религия">Религия</option>
+						<option value="Искусство">Искусство</option>
+					</select>
+				</div>
+
+				<div class="search__form_biography search__form_line">
+					<label for="biography">Библиографическая запись </label>
+					<input type="text" name="biography" id="biography" placeholder="Введите">
+				</div>
+
+				<div class="search__form_annotation">
+					<label for="annotation">Аннотация</label>
+					<textarea name="annotation" id="annotation" placeholder="Введите"></textarea>
+				</div>
+
+				<div class="search__form_btn">
+					<button class="btn btn--yellow">Найти</button>
+					<p><a href="#">Сбросить фильтр</a></p>
+				</div>
+	
+			</form>
+		</div>
+		
+
+	</div>
+
+	<footer class="footer">
+		<div class="container">
+			<p>«© 2020 Цифровая среда ФГБОУ ВО Ивановской пожарно-спасательной академии ГПС МЧС России»</p>
+		</div>
+	</footer>
+
+	<div class="modal" id="order">
+		<form action="sendmail.php" class="form" method="post">
+
+			<button class="close order_close" type="button">
+				<span></span>
+				<span></span>
+			</button>
+
+			<h3>Оставьте заявку, <br>мы свяжемся с Вами</h3>
+			<input type="hidden" name="subject" value="Узнать подробнее!">
+
+			<div class="">
+				<input type="text" name="name" placeholder="Имя" required>
+			</div>
+			<div class="">
+				<input type="tel" name="phone" placeholder="Телефон" required>
+			</div>
+			<div class="">
+				<button type="submit" class="btn" name="submit">Отправить</button>
+			</div>
+		</form>
+	</div>
+
+	<div class="modal" id="thanks">
+		<button class="close thanks_close" type="button">
+			<span></span>
+			<span></span>
+		</button>
+		<h3>Спасибо за доверие!</h3>
+		<p>Мы обязательно с вами свяжемся!</p>
+	</div>
+
+	<script src="js/scripts.min.js"></script>
+
+</body>
+</html>
